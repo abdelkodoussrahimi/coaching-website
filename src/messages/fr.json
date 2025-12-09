@@ -1,0 +1,123 @@
+{
+    "services": {
+        "header": {
+            "title": "Mes Services Numériques",
+            "titleHighlight": "Premium",
+            "subtitle": "Des systèmes à fort impact pour développer votre entreprise en toute confiance."
+        },
+        "cards": {
+            "whatsapp": {
+                "title": "Marketing WhatsApp",
+                "description": "Exploitez la messagerie directe pour créer des relations authentiques et générer des conversions.",
+                "button": "Voir les Détails"
+            },
+            "email": {
+                "title": "Marketing par Email",
+                "description": "Campagnes automatisées qui nourrissent les prospects et maximisent la valeur client.",
+                "button": "Voir les Détails"
+            },
+            "seo": {
+                "title": "Optimisation SEO",
+                "description": "Dominez les classements avec une optimisation stratégique et une maîtrise du contenu.",
+                "button": "Voir les Détails"
+            },
+            "influencer": {
+                "title": "Construction d'Influence",
+                "description": "Construisez une marque personnelle puissante qui attire opportunités et revenus.",
+                "button": "Voir les Détails"
+            },
+            "digital": {
+                "title": "Produits Numériques",
+                "description": "Créez et développez des offres numériques générant des revenus passifs.",
+                "button": "Voir les Détails"
+            }
+        },
+        "explanation": {
+            "title": "Ce Que Vous",
+            "titleHighlight": "Gagnerez",
+            "benefits": {
+                "impact": {
+                    "title": "Impact Stratégique",
+                    "description": "Chaque service est conçu pour faire progresser vos revenus et votre croissance."
+                },
+                "clarity": {
+                    "title": "Clarté Cristalline",
+                    "description": "Pas de jargon, pas de confusion—juste des systèmes clairs qui fonctionnent."
+                },
+                "growth": {
+                    "title": "Croissance Accélérée",
+                    "description": "Des cadres éprouvés qui transforment des années d'essais en mois de résultats."
+                },
+                "automation": {
+                    "title": "Automatisation Intelligente",
+                    "description": "Construisez des systèmes évolutifs sans vous épuiser."
+                },
+                "authority": {
+                    "title": "Construction d'Autorité",
+                    "description": "Positionnez-vous comme l'expert de référence dans votre niche."
+                },
+                "revenue": {
+                    "title": "Revenus Durables",
+                    "description": "Créez plusieurs sources de revenus pour une stabilité à long terme."
+                }
+            }
+        },
+        "comparison": {
+            "title": "Comparaison des",
+            "titleHighlight": "Services",
+            "subtitle": "Choisissez l'option parfaite pour vos objectifs commerciaux",
+            "table": {
+                "headers": {
+                    "service": "Service",
+                    "reach": "Portée",
+                    "automation": "Automatisation",
+                    "roi": "Potentiel ROI",
+                    "results": "Résultats"
+                },
+                "data": {
+                    "whatsapp": {
+                        "reach": "Direct & Personnel",
+                        "automation": "Élevée",
+                        "timeframe": "2-4 semaines"
+                    },
+                    "email": {
+                        "reach": "Large & Évolutif",
+                        "automation": "Très Élevée",
+                        "timeframe": "3-6 semaines"
+                    },
+                    "seo": {
+                        "reach": "Organique & Long terme",
+                        "automation": "Moyenne",
+                        "timeframe": "2-3 mois"
+                    },
+                    "influencer": {
+                        "reach": "Large & Engagé",
+                        "automation": "Moyenne",
+                        "timeframe": "1-2 mois"
+                    },
+                    "digital": {
+                        "reach": "Mondial & Passif",
+                        "automation": "Très Élevée",
+                        "timeframe": "4-8 semaines"
+                    }
+                }
+            },
+            "note": "Tous les services peuvent être personnalisés selon vos besoins spécifiques et combinés pour un impact maximal."
+        },
+        "cta": {
+            "title": "Prêt à Faire Évoluer Votre",
+            "titleHighlight": "Entreprise?",
+            "subtitle": "Réservez votre session stratégique gratuite maintenant et découvrez quels services transformeront vos résultats.",
+            "button": "Réserver une Session Gratuite",
+            "trust": {
+                "noCommitment": "Aucun engagement requis",
+                "valueDriven": "100% axé sur la valeur",
+                "tailored": "Adapté à vos objectifs"
+            }
+        }
+    },
+    "common": {
+        "language": "Langue",
+        "selectLanguage": "Choisir la Langue"
+    }
+}

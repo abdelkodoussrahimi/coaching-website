@@ -1,0 +1,123 @@
+{
+    "services": {
+        "header": {
+            "title": "My Premium Digital",
+            "titleHighlight": "Services",
+            "subtitle": "High-impact systems to grow your business with confidence."
+        },
+        "cards": {
+            "whatsapp": {
+                "title": "WhatsApp Marketing",
+                "description": "Leverage direct messaging to build authentic relationships and drive conversions.",
+                "button": "View Details"
+            },
+            "email": {
+                "title": "Email Marketing",
+                "description": "Automated campaigns that nurture leads and maximize lifetime customer value.",
+                "button": "View Details"
+            },
+            "seo": {
+                "title": "SEO Boost",
+                "description": "Dominate search rankings with strategic optimization and content mastery.",
+                "button": "View Details"
+            },
+            "influencer": {
+                "title": "Influencer Building",
+                "description": "Build a powerful personal brand that attracts opportunities and revenue.",
+                "button": "View Details"
+            },
+            "digital": {
+                "title": "Digital Products",
+                "description": "Create and scale digital offerings that generate passive income streams.",
+                "button": "View Details"
+            }
+        },
+        "explanation": {
+            "title": "What You'll",
+            "titleHighlight": "Gain",
+            "benefits": {
+                "impact": {
+                    "title": "Strategic Impact",
+                    "description": "Every service is designed to move the needle on your revenue and growth."
+                },
+                "clarity": {
+                    "title": "Crystal Clarity",
+                    "description": "No jargon, no confusion—just clear systems that work."
+                },
+                "growth": {
+                    "title": "Accelerated Growth",
+                    "description": "Proven frameworks that compress years of trial into months of results."
+                },
+                "automation": {
+                    "title": "Smart Automation",
+                    "description": "Build systems that scale without burning you out."
+                },
+                "authority": {
+                    "title": "Authority Building",
+                    "description": "Position yourself as the go-to expert in your niche."
+                },
+                "revenue": {
+                    "title": "Sustainable Revenue",
+                    "description": "Create multiple income streams for long-term stability."
+                }
+            }
+        },
+        "comparison": {
+            "title": "Service",
+            "titleHighlight": "Comparison",
+            "subtitle": "Choose the perfect fit for your business goals",
+            "table": {
+                "headers": {
+                    "service": "Service",
+                    "reach": "Reach",
+                    "automation": "Automation",
+                    "roi": "ROI Potential",
+                    "results": "Results"
+                },
+                "data": {
+                    "whatsapp": {
+                        "reach": "Direct & Personal",
+                        "automation": "High",
+                        "timeframe": "2-4 weeks"
+                    },
+                    "email": {
+                        "reach": "Broad & Scalable",
+                        "automation": "Very High",
+                        "timeframe": "3-6 weeks"
+                    },
+                    "seo": {
+                        "reach": "Organic & Long-term",
+                        "automation": "Medium",
+                        "timeframe": "2-3 months"
+                    },
+                    "influencer": {
+                        "reach": "Wide & Engaged",
+                        "automation": "Medium",
+                        "timeframe": "1-2 months"
+                    },
+                    "digital": {
+                        "reach": "Global & Passive",
+                        "automation": "Very High",
+                        "timeframe": "4-8 weeks"
+                    }
+                }
+            },
+            "note": "All services can be customized to your specific needs and combined for maximum impact."
+        },
+        "cta": {
+            "title": "Ready to Level Up Your",
+            "titleHighlight": "Business?",
+            "subtitle": "Book your free strategy session now and discover which services will transform your results.",
+            "button": "Book Free Strategy Session",
+            "trust": {
+                "noCommitment": "No commitment required",
+                "valueDriven": "100% value-driven",
+                "tailored": "Tailored to your goals"
+            }
+        }
+    },
+    "common": {
+        "language": "Language",
+        "selectLanguage": "Select Language"
+    }
+}
