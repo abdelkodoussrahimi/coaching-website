@@ -7,8 +7,14 @@ import { useTranslations } from 'next-intl';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function CTASection() {
+interface CTASectionProps {
+    customTitle?: string;
+    customButtonText?: string;
+}
+
+export default function CTASection({ customTitle, customButtonText }: CTASectionProps) {
     const t = useTranslations('services.cta');
+
     const ctaRef = useRef<HTMLDivElement>(null);
     const buttonRef = useRef<HTMLButtonElement>(null);
 
@@ -67,8 +73,12 @@ export default function CTASection() {
 
             <div className="cta-content relative max-w-4xl mx-auto text-center space-y-8">
                 <h2 className="text-5xl md:text-7xl font-heading font-bold text-white leading-tight">
-                    {t('title')}{' '}
-                    <span className="text-gold">{t('titleHighlight')}</span>
+                    {customTitle || (
+                        <>
+                            {t('title')}{' '}
+                            <span className="text-gold">{t('titleHighlight')}</span>
+                        </>
+                    )}
                 </h2>
 
                 <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl mx-auto">
@@ -82,7 +92,7 @@ export default function CTASection() {
                         style={{ boxShadow: '0 0 30px rgba(212, 175, 55, 0.5)' }}
                     >
                         <span className="relative z-10 flex items-center gap-3">
-                            {t('button')}
+                            {customButtonText || t('button')}
                             <svg
                                 className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300"
                                 fill="none"

@@ -6,30 +6,218 @@
             "subtitle": "Des systèmes à fort impact pour développer votre entreprise en toute confiance."
         },
         "cards": {
-            "whatsapp": {
-                "title": "Marketing WhatsApp",
-                "description": "Exploitez la messagerie directe pour créer des relations authentiques et générer des conversions.",
-                "button": "Voir les Détails"
-            },
-            "email": {
-                "title": "Marketing par Email",
-                "description": "Campagnes automatisées qui nourrissent les prospects et maximisent la valeur client.",
+            "website": {
+                "title": "Conception de Sites Web",
+                "description": "Des sites web modernes, rapides et axés sur la vente.",
                 "button": "Voir les Détails"
             },
             "seo": {
                 "title": "Optimisation SEO",
-                "description": "Dominez les classements avec une optimisation stratégique et une maîtrise du contenu.",
+                "description": "Dominez les classements avec une optimisation stratégique.",
                 "button": "Voir les Détails"
             },
-            "influencer": {
-                "title": "Construction d'Influence",
-                "description": "Construisez une marque personnelle puissante qui attire opportunités et revenus.",
+            "email": {
+                "title": "Marketing par Email",
+                "description": "Campagnes automatisées qui nourrissent les prospects.",
+                "button": "Voir les Détails"
+            },
+            "social_growth": {
+                "title": "Croissance Réseaux Sociaux",
+                "description": "Développez votre présence de manière organique.",
+                "button": "Voir les Détails"
+            },
+            "payment": {
+                "title": "Solutions de Paiement",
+                "description": "Intégration sécurisée de passerelles de paiement.",
                 "button": "Voir les Détails"
             },
             "digital": {
                 "title": "Produits Numériques",
-                "description": "Créez et développez des offres numériques générant des revenus passifs.",
+                "description": "Créez et développez des offres numériques.",
                 "button": "Voir les Détails"
+            },
+            "whatsapp": {
+                "title": "Marketing WhatsApp",
+                "description": "Exploitez la messagerie directe pour créer des relations.",
+                "button": "Voir les Détails"
+            }
+        },
+        "details": {
+            "website": {
+                "title": "Conception de Sites Web Pro",
+                "subtitle": "Sites modernes conçus pour la vente",
+                "description": "Nous concevons des sites modernes et rapides avec une UX claire.",
+                "included": [
+                    "Site Rapide & Sécurisé",
+                    "Conçu pour les Résultats",
+                    "UX Professionnelle"
+                ],
+                "process": [
+                    "Analyse des besoins",
+                    "Conception UI/UX",
+                    "Développement",
+                    "Lancement"
+                ],
+                "outcomes": [
+                    "Site professionnel",
+                    "Design premium",
+                    "Base SEO solide"
+                ],
+                "cta": {
+                    "text": "Prêt pour un site qui vend?",
+                    "button": "Réserver un Appel Gratuit"
+                }
+            },
+            "seo": {
+                "title": "Optimisation SEO",
+                "subtitle": "Soyez en première page",
+                "description": "Analyse complète et stratégie de mots-clés pour dominer les recherches.",
+                "included": [
+                    "Analyse Complète",
+                    "Mots-clés Précis",
+                    "Optimisation Vitesse"
+                ],
+                "process": [
+                    "Audit SEO",
+                    "Recherche mots-clés",
+                    "Optimisation on-page",
+                    "Suivi"
+                ],
+                "outcomes": [
+                    "Meilleurs classements",
+                    "Plus de trafic",
+                    "Autorité améliorée"
+                ],
+                "cta": {
+                    "text": "Voulez-vous apparaître en première page?",
+                    "button": "Demander un Audit SEO"
+                }
+            },
+            "email": {
+                "title": "Marketing par Email",
+                "subtitle": "Campagnes intégrées",
+                "description": "Automatisation complète pour convertir les visiteurs en clients fidèles.",
+                "included": [
+                    "Messages Persuasifs",
+                    "Automatisation Complète",
+                    "Funnels Personnalisés"
+                ],
+                "process": [
+                    "Recherche client",
+                    "Structure funnel",
+                    "Rédaction emails",
+                    "Configuration"
+                ],
+                "outcomes": [
+                    "Système automatisé",
+                    "Meilleurs taux",
+                    "Plus d'achats répétés"
+                ],
+                "cta": {
+                    "text": "Prêt à automatiser vos ventes?",
+                    "button": "Lancer Mon Système Email"
+                }
+            },
+            "social_growth": {
+                "title": "Croissance Social Media",
+                "subtitle": "Développez votre présence",
+                "description": "Stratégies de contenu et de croissance organique.",
+                "included": [
+                    "Stratégie de Publication",
+                    "Création de Contenu",
+                    "Croissance Organique"
+                ],
+                "process": [
+                    "Analyse marque",
+                    "Stratégie contenu",
+                    "Système publication",
+                    "Optimisation"
+                ],
+                "outcomes": [
+                    "Croissance rapide",
+                    "Meilleur engagement",
+                    "Autorité",
+                    "Clients des réseaux"
+                ],
+                "cta": {
+                    "text": "Prêt à développer votre présence?",
+                    "button": "Démarrer Mon Plan"
+                }
+            },
+            "payment": {
+                "title": "Solutions de Paiement",
+                "subtitle": "Intégration sécurisée",
+                "description": "Solutions complètes pour connecter votre site aux passerelles de paiement.",
+                "included": [
+                    "Intégration Sécurisée",
+                    "Support Multi-projets",
+                    "Solutions Locales"
+                ],
+                "process": [
+                    "Analyse besoin",
+                    "Choix passerelle",
+                    "Intégration",
+                    "Tests"
+                ],
+                "outcomes": [
+                    "Paiement sécurisé",
+                    "Moins d'abandons",
+                    "Plus de ventes"
+                ],
+                "cta": {
+                    "text": "Besoin d'un système de paiement efficace?",
+                    "button": "Configurer Ma Passerelle"
+                }
+            },
+            "digital": {
+                "title": "Produits Numériques",
+                "subtitle": "Vendez vos produits",
+                "description": "Tout ce dont vous avez besoin pour vendre des produits numériques.",
+                "included": [
+                    "Plateforme & Protection",
+                    "Livraison Automatique",
+                    "Page de Vente Pro"
+                ],
+                "process": [
+                    "Stratégie produit",
+                    "Configuration plateforme",
+                    "Création funnel",
+                    "Lancement"
+                ],
+                "outcomes": [
+                    "Business automatisé",
+                    "Système sécurisé",
+                    "Page de vente pro"
+                ],
+                "cta": {
+                    "text": "Prêt à lancer vos produits numériques?",
+                    "button": "Créer Mon Système"
+                }
+            },
+            "whatsapp": {
+                "title": "Marketing WhatsApp",
+                "subtitle": "Stratégies directes",
+                "description": "Touchez vos clients directement avec des campagnes ciblées.",
+                "included": [
+                    "Messages Directs",
+                    "Campagnes Ciblées",
+                    "Réponses Automatiques"
+                ],
+                "process": [
+                    "Analyse business",
+                    "Stratégie messages",
+                    "Configuration",
+                    "Lancement"
+                ],
+                "outcomes": [
+                    "Meilleur taux de réponse",
+                    "Conversions rapides",
+                    "Suivi automatisé"
+                ],
+                "cta": {
+                    "text": "Transformer WhatsApp en machine à ventes?",
+                    "button": "Lancer Mon Système WhatsApp"
+                }
             }
         },
         "explanation": {
@@ -75,30 +263,40 @@
                     "results": "Résultats"
                 },
                 "data": {
-                    "whatsapp": {
-                        "reach": "Direct & Personnel",
+                    "website": {
+                        "reach": "Mondial & Permanent",
                         "automation": "Élevée",
                         "timeframe": "2-4 semaines"
-                    },
-                    "email": {
-                        "reach": "Large & Évolutif",
-                        "automation": "Très Élevée",
-                        "timeframe": "3-6 semaines"
                     },
                     "seo": {
                         "reach": "Organique & Long terme",
                         "automation": "Moyenne",
                         "timeframe": "2-3 mois"
                     },
-                    "influencer": {
+                    "email": {
+                        "reach": "Direct & Personnel",
+                        "automation": "Très Élevée",
+                        "timeframe": "1-2 semaines"
+                    },
+                    "social_growth": {
                         "reach": "Large & Engagé",
                         "automation": "Moyenne",
-                        "timeframe": "1-2 mois"
+                        "timeframe": "1-3 mois"
+                    },
+                    "payment": {
+                        "reach": "Mondial & Sécurisé",
+                        "automation": "Totale",
+                        "timeframe": "Quelques jours"
                     },
                     "digital": {
                         "reach": "Mondial & Passif",
                         "automation": "Très Élevée",
-                        "timeframe": "4-8 semaines"
+                        "timeframe": "2-4 semaines"
+                    },
+                    "whatsapp": {
+                        "reach": "Instant & Direct",
+                        "automation": "Élevée",
+                        "timeframe": "Immédiat"
                     }
                 }
             },

@@ -11,7 +11,7 @@ export default function ComparisonTable() {
     const t = useTranslations('services.comparison');
     const tableRef = useRef<HTMLDivElement>(null);
 
-    const serviceKeys = ['whatsapp', 'email', 'seo', 'influencer', 'digital'] as const;
+    const serviceKeys = ['website', 'seo', 'email', 'social_growth', 'payment', 'digital', 'whatsapp'] as const;
 
     useEffect(() => {
         if (!tableRef.current) return;
@@ -39,11 +39,13 @@ export default function ComparisonTable() {
 
     const getRoiDots = (service: string) => {
         const roiLevels: Record<string, number> = {
-            whatsapp: 4,
-            email: 5,
+            website: 4,
             seo: 5,
-            influencer: 3,
+            email: 5,
+            social_growth: 4,
+            payment: 4,
             digital: 5,
+            whatsapp: 4,
         };
         return roiLevels[service] || 3;
     };

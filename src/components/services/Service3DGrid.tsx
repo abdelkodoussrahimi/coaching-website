@@ -6,6 +6,7 @@ import { useRef, useState } from 'react';
 import * as THREE from 'three';
 import { gsap } from 'gsap';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/routing';
 
 // Individual 3D models for each service
 function WhatsAppModel() {
@@ -26,6 +27,54 @@ function WhatsAppModel() {
                 </Float>
             ))}
         </group>
+    );
+}
+
+function WebsiteDesignModel() {
+    return (
+        <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.5}>
+            <group rotation={[0, -0.2, 0]}>
+                {/* Main Browser Window */}
+                <mesh position={[0, 0, 0]}>
+                    <boxGeometry args={[2.8, 1.8, 0.1]} />
+                    <meshStandardMaterial color="#1A2333" metalness={0.8} roughness={0.2} />
+                </mesh>
+                {/* Screen Content */}
+                <mesh position={[0, 0, 0.06]}>
+                    <planeGeometry args={[2.6, 1.6]} />
+                    <meshStandardMaterial color="#D4AF37" emissive="#D4AF37" emissiveIntensity={0.2} metalness={0.5} roughness={0.2} />
+                </mesh>
+                {/* Floaters */}
+                <mesh position={[1.8, 0.5, 0.5]} rotation={[0, -0.5, 0]}>
+                    <boxGeometry args={[1, 1.4, 0.05]} />
+                    <meshStandardMaterial color="#F5D76E" metalness={0.9} roughness={0.1} />
+                </mesh>
+            </group>
+        </Float>
+    );
+}
+
+function PaymentGatewayModel() {
+    return (
+        <Float speed={2} rotationIntensity={0.4} floatIntensity={0.8}>
+            <group>
+                {/* Credit Card Shape */}
+                <mesh>
+                    <boxGeometry args={[2.4, 1.5, 0.1]} />
+                    <meshStandardMaterial color="#D4AF37" metalness={0.9} roughness={0.1} />
+                </mesh>
+                {/* Chip */}
+                <mesh position={[-0.8, 0.3, 0.06]}>
+                    <planeGeometry args={[0.4, 0.3]} />
+                    <meshStandardMaterial color="#F5D76E" emissive="#F5D76E" emissiveIntensity={0.5} />
+                </mesh>
+                {/* Lock Icon Representative */}
+                <mesh position={[0, 0, 0.2]}>
+                    <torusGeometry args={[0.3, 0.05, 16, 32]} />
+                    <meshStandardMaterial color="#FFF" emissive="#FFF" emissiveIntensity={0.5} />
+                </mesh>
+            </group>
+        </Float>
     );
 }
 
@@ -91,7 +140,7 @@ function SEOModel() {
     );
 }
 
-function InfluencerModel() {
+function SocialGrowthModel() {
     return (
         <Float speed={2} rotationIntensity={0.5} floatIntensity={1}>
             <group>
@@ -174,9 +223,13 @@ function DigitalProductsModel() {
 }
 
 interface ServiceCardProps {
-    serviceKey: 'whatsapp' | 'email' | 'seo' | 'influencer' | 'digital';
-    model: 'whatsapp' | 'email' | 'seo' | 'influencer' | 'digital';
+    serviceKey: 'website' | 'seo' | 'email' | 'social_growth' | 'payment' | 'digital' | 'whatsapp';
+    model: 'website' | 'seo' | 'email' | 'social_growth' | 'payment' | 'digital' | 'whatsapp';
 }
+
+// ... imports remain the same
+
+// ... ServiceCardProps interface remains the same
 
 function ServiceCard({ serviceKey, model }: ServiceCardProps) {
     const t = useTranslations('services.cards');
@@ -215,61 +268,69 @@ function ServiceCard({ serviceKey, model }: ServiceCardProps) {
                 return <EmailModel />;
             case 'seo':
                 return <SEOModel />;
-            case 'influencer':
-                return <InfluencerModel />;
+            case 'social_growth':
+                return <SocialGrowthModel />;
             case 'digital':
                 return <DigitalProductsModel />;
+            case 'website':
+                return <WebsiteDesignModel />;
+            case 'payment':
+                return <PaymentGatewayModel />;
             default:
                 return null;
         }
     };
 
     return (
-        <div
-            ref={cardRef}
-            className="relative bg-gradient-to-br from-[#0A0F1F] to-[#1A2333] rounded-2xl overflow-hidden border border-gold/20 transition-all duration-300"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            style={{ boxShadow: '0 10px 30px rgba(0, 0, 0, 0.5)' }}
-        >
-            {/* 3D Canvas */}
-            <div className="h-64 relative">
-                <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
-                    <ambientLight intensity={0.5} />
-                    <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} />
-                    <pointLight position={[-10, -10, -10]} intensity={0.5} color="#D4AF37" />
-                    <Model3D />
-                    <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={isHovered ? 4 : 1} />
-                </Canvas>
-            </div>
+        <Link href={`/services/${serviceKey}`} className="block">
+            <div
+                ref={cardRef}
+                className="relative bg-gradient-to-br from-[#0A0F1F] to-[#1A2333] rounded-2xl overflow-hidden border border-gold/20 transition-all duration-300 h-full"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={{ boxShadow: '0 10px 30px rgba(0, 0, 0, 0.5)' }}
+            >
+                {/* 3D Canvas */}
+                <div className="h-64 relative">
+                    <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
+                        <ambientLight intensity={0.5} />
+                        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} />
+                        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#D4AF37" />
+                        <Model3D />
+                        <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={isHovered ? 4 : 1} />
+                    </Canvas>
+                </div>
 
-            {/* Content */}
-            <div className="p-6 space-y-4">
-                <h3 className="text-2xl font-heading font-bold text-white">{t(`${serviceKey}.title`)}</h3>
-                <p className="text-gray-400 leading-relaxed">{t(`${serviceKey}.description`)}</p>
-                <button className="group relative px-6 py-3 bg-transparent border border-gold rounded-lg overflow-hidden transition-all duration-300 hover:border-gold-light w-full">
-                    <span className="relative z-10 text-gold group-hover:text-black transition-colors duration-300 font-semibold">
-                        {t(`${serviceKey}.button`)}
-                    </span>
-                    <div className="absolute inset-0 bg-gold transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
-                </button>
-            </div>
+                {/* Content */}
+                <div className="p-6 space-y-4">
+                    <h3 className="text-2xl font-heading font-bold text-white">{t(`${serviceKey}.title`)}</h3>
+                    <p className="text-gray-400 leading-relaxed">{t(`${serviceKey}.description`)}</p>
+                    <div className="group relative px-6 py-3 bg-transparent border border-gold rounded-lg overflow-hidden transition-all duration-300 hover:border-gold-light w-full text-center">
+                        <span className="relative z-10 text-gold group-hover:text-black transition-colors duration-300 font-semibold">
+                            {t(`${serviceKey}.button`)}
+                        </span>
+                        <div className="absolute inset-0 bg-gold transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
+                    </div>
+                </div>
 
-            {/* Glow effect on hover */}
-            {isHovered && (
-                <div className="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent pointer-events-none" />
-            )}
-        </div>
+                {/* Glow effect on hover */}
+                {isHovered && (
+                    <div className="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent pointer-events-none" />
+                )}
+            </div>
+        </Link>
     );
 }
 
 export default function Service3DGrid() {
     const services: Array<{ serviceKey: ServiceCardProps['serviceKey'], model: ServiceCardProps['model'] }> = [
-        { serviceKey: 'whatsapp', model: 'whatsapp' },
-        { serviceKey: 'email', model: 'email' },
+        { serviceKey: 'website', model: 'website' },
         { serviceKey: 'seo', model: 'seo' },
-        { serviceKey: 'influencer', model: 'influencer' },
+        { serviceKey: 'email', model: 'email' },
+        { serviceKey: 'social_growth', model: 'social_growth' },
+        { serviceKey: 'payment', model: 'payment' },
         { serviceKey: 'digital', model: 'digital' },
+        { serviceKey: 'whatsapp', model: 'whatsapp' },
     ];
 
     return (
